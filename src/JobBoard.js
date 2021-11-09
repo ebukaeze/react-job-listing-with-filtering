@@ -29,8 +29,8 @@ const JobBoard = ({
     }
 
     return(
-         <div className={`card ${featured && "featured-card"}`} key={key}>
-                    <div className="card-items">
+         <div className={`card ${featured && "featured-card"}`} >
+                    <div className="card-items" key={key}>
                         
                         <div className="main">
                             <div className="left-content">
@@ -60,7 +60,7 @@ const JobBoard = ({
                                 <div className="tagline">
                                     { tags?
                                     tags.map((tag, index) => (
-                                    <p onClick={() => handleTagClick(tag)}>{tag}</p>
+                                    <p onClick={() => handleTagClick(tag)} key={index}>{tag}</p>
                                     ))
                                      : ""
                                     }

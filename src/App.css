@@ -38,7 +38,7 @@ body {
   transition: 0.2s ease;
   box-shadow: 2px 16px 28px -8px rgba(66, 78, 78, 0.2);
   padding: 0 62px;
-  flex-wrap: wrap;
+
   justify-content: space-between;
 }
 .tags {
@@ -233,16 +233,24 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  .middle-items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+  }
   .card-items {
   }
   .main {
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
   .left-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
